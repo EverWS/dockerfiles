@@ -1,3 +1,63 @@
+# Ignore generated Docker image files
+*.tar
+*.zip
+
+# Ignore files created during Docker build process
+Dockerfile.*.tmp
+.DS_Store
+
+# Ignore log files and directories
+logs/
+log/
+*.log
+
+# Ignore temporary files
+*.swp
+*.swo
+
+# Ignore environment-specific Docker Compose files
+docker-compose.override.yml
+docker-compose.override.yaml
+docker-compose.override.*
+
+# Ignore Docker Compose YAML files
+docker-compose.yml
+docker-compose.yaml
+
+# Ignore .env files containing sensitive information
+.env
+
+# Ignore build context directories (if not needed in your repository)
+# These may include large files or directories that don't need to be part of version control.
+# Uncomment these lines if needed.
+# build/
+# context/
+
+# Ignore Docker cache files
+.dockerignore
+
+# Ignore image and container metadata
+docker-compose.data.yml
+docker-compose.data.yaml
+.docker/
+
+# Ignore other application-specific files and directories
+# Add patterns for your specific application files or directories here
+
+# Ignore any files in a directory named "ignore"
+/ignore/
+
+# Ignore system-specific files or directories
+/.vscode/
+/.idea/
+__pycache/
+node_modules/
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.swp
+*.swo
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
